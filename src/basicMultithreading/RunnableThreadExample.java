@@ -11,6 +11,7 @@ public class RunnableThreadExample {
                 }
             }
         });
+        // using lamda syntax
         Thread t2 = new Thread(()->{
             for(int i=0;i<10;i++){
                 System.out.println("Thread 2 " + i);
