@@ -1,3 +1,5 @@
+package multithreading;
+
 public class SequentialExectionDemo {
     public static void main(String[] args) {
         demo1();

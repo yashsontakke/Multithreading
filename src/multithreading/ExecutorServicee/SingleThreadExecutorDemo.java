@@ -1,25 +1,28 @@
-package ExecutorServicee;
+package multithreading.ExecutorServicee;
 
 import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 
-public class CacheThreadExecutorDemo {
+public class SingleThreadExecutorDemo {
+
     public static void main(String[] args) {
 
-        // created around 16 threads
-        ExecutorService service =Executors.newCachedThreadPool();
+        ExecutorService service =  Executors.newSingleThreadExecutor();
 
-        for(int i=0;i<50;i++){
+        for(int i=0;i<5;i++){
             service.execute(new Task(i));
         }
+
     }
+
 }
 
-class Test2  implements  Runnable{
-    private int  index ;
+class Task implements  Runnable{
 
-    Test2(int i ){
-        this.index=i;
+    private final int index ;
+
+    public Task(int i){
+        this.index = i ;
     }
 
     @Override

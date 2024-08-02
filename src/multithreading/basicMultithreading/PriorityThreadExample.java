@@ -1,4 +1,4 @@
-package basicMultithreading;
+package multithreading.basicMultithreading;
 
 public class PriorityThreadExample {
     public static void main(String[] args) {

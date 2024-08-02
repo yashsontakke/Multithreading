@@ -1,5 +1,4 @@
-package basicMultithreading;
-import java.util.Collection;
+package multithreading.basicMultithreading;
 import java.util.LinkedList;
 
 public class ProducerConsumerProblem {

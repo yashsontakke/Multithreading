@@ -1,4 +1,4 @@
-package basicMultithreading;
+package multithreading.basicMultithreading;
 
 public class UserDaemonThreadDemo {
 
