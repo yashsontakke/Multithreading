@@ -1,13 +1,14 @@
-package multithreading.synchronizedcollections;
+package multithreading.Concurrent;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class NonSynchronizedCollDemo {
+public class SynchronizedCollection {
 
     public static void main(String[] args) throws InterruptedException {
 
-        List<Integer> list = new ArrayList<>();
+        List<Integer> list = Collections.synchronizedList(new ArrayList<>());
 
         Thread t1 = new Thread(()->{
             for(int i=0;i<100;i++){
@@ -25,10 +26,7 @@ public class NonSynchronizedCollDemo {
         t2.start();
         t1.join();
         t2.join();
-        System.out.println(list.size());  // 194 to
+        System.out.println(list.size());  // 200 to
 
     }
-
 }
-
-
