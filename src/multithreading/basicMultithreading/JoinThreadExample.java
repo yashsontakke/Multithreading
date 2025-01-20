@@ -15,8 +15,6 @@ public class JoinThreadExample {
             }
         });
 
-
-
         t1.start();
         t2.start();
         t1.join();  // main thread will untill t1 thread finishes

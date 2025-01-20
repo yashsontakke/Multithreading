@@ -17,12 +17,12 @@ public class RunnableThreadExample {
                 System.out.println("Thread 2 " + i);
             }
         });
+
         t1.start();
         t2.start();
         t3.start();
     }
 }
-
 class Thread1 implements  Runnable{
 
     @Override

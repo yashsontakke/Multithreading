@@ -27,6 +27,7 @@ class Task implements  Runnable{
         this.num = i ;
         this.latch = latch;
     }
+
     @Override
     public void run() {
         System.out.println("Thread " + num + "running");

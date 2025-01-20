@@ -11,12 +11,10 @@ public class FixedExecutorDemo {
         for(int i=0;i<500;i++){
             service.execute(new Task1(i));
         }
-
     }
 }
 
-
- class Task1 implements  Runnable{
+class Task1 implements  Runnable{
 
     private final int index ;
 

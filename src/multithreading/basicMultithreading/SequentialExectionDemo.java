@@ -1,4 +1,4 @@
-package multithreading;
+package multithreading.basicMultithreading;
 
 public class SequentialExectionDemo {
     public static void main(String[] args) {

@@ -16,7 +16,6 @@ public class UserDaemonThreadDemo {
             }
         });
 
-
         Thread t2 = new Thread(()->{
             try {
                 Thread.sleep(5000);
