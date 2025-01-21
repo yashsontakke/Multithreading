@@ -19,7 +19,7 @@ class File implements  FileSystem{
     }
 }
 
-class Folder implements  FileSystem{
+class Folder implements FileSystem{
 
     String name ;
     List<FileSystem> children = new ArrayList<>();
