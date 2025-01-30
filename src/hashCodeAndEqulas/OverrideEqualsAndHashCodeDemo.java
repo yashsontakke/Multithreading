@@ -9,7 +9,7 @@ public class OverrideEqualsAndHashCodeDemo {
 
 
         // if equals not overridden this would give false
-        System.out.println(human.equals(human1));// true as we have overridden and it will check context for equality instead memeory address
+        System.out.println(human.equals(human1));// true as we have overridden and it will check context for equality instead memory address
 
 
         // if hashcode not overridden then different hashcode values

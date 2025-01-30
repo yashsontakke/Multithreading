@@ -1,6 +1,5 @@
 package hashCodeAndEqulas;
 
-
 public class DefaultDemo {
     int a ;
 
@@ -41,9 +40,6 @@ public class DefaultDemo {
             // clear that equals check memory address not hashcode
             System.out.println(st1.equals(st2));  // false
         }
-
-
-
     }
 }
 
