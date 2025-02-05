@@ -7,6 +7,20 @@ https://www.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1
 https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/
 https://leetcode.com/problems/word-break/description/
 Implement thread safe KV store without using any inbuilt library
-
-
-
+merge sort iterative
+randomize a given array
+sorting in O(N)
+//Given a sorted array of size n, depict whether an element having a frequency greater than n/2.
+If it doesn't exist, give an indication. Expectation: O(log n) time
+// worst tc of merge and quick sort ;
+// hashmap internals , hash collision , equals and hashcode contract
+// string immutability
+https://leetcode.com/problems/gas-station/description/
+https://www.geeksforgeeks.org/problems/next-greater-even-number0828/1
+https://interviewprep.org/decorator-pattern-interview-questions/
+https://climbtheladder.com/builder-design-pattern-interview-questions/
+https://www.geeksforgeeks.org/number-of-subsequences-with-even-and-odd-sum-set-2/
+https://www.geeksforgeeks.org/problems/pythagorean-triplet3018/1
+https://www.geeksforgeeks.org/check-whether-a-given-point-lies-inside-a-triangle-or-not/
+https://www.geeksforgeeks.org/problems/smallest-positive-missing-number-1587115621/1
+https://www.geeksforgeeks.org/problems/josephus-problem/1?itm_source=geeksforgeeks&itm_medium=article&itm_campaign=practice_card

@@ -1,4 +1,4 @@
-package hashCodeAndEqulas;
+package COREJAVA.hashCodeAndEqulas;
 
 public class DefaultDemo {
     int a ;

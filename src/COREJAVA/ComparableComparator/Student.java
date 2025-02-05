@@ -1,4 +1,4 @@
-package ComparableComparator;
+package COREJAVA.ComparableComparator;
 
 import java.util.*;
 

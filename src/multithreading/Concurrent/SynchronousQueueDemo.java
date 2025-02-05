@@ -20,6 +20,7 @@ public class SynchronousQueueDemo {
             });
         }) ;
 
+
         Thread consumerOne = new Thread(()->{
             while(true){
                 try {
@@ -47,7 +48,7 @@ public class SynchronousQueueDemo {
 
         producer.start();
         consumerOne.start();
-//        consumerTwo.start();
+//       consumerTwo.start();
 
     }
 //    private static void processTask(int task , String consumerName) throws InterruptedException {

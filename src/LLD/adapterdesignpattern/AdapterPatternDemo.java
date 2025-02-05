@@ -1,7 +1,7 @@
 package LLD.adapterdesignpattern;
 
 // target
-interface DollarPayment{
+interface PaymentGateWay{
     double getPayment();
 }
 
@@ -15,7 +15,7 @@ class RupeesPayment {
 }
 
 // adapter
-class DollarPaymentAdapter implements  DollarPayment{
+class DollarPaymentAdapter implements  PaymentGateWay{
 
     RupeesPayment rupeesPayment ;
 
@@ -29,6 +29,19 @@ class DollarPaymentAdapter implements  DollarPayment{
     }
 }
 
+class RubelPaymentAdapter implements  PaymentGateWay{
+    RupeesPayment rupeesPayment ;
+
+    public RubelPaymentAdapter(RupeesPayment rupeesPayment) {
+        this.rupeesPayment = rupeesPayment;
+
+    }
+    @Override
+    public double getPayment() {
+        return rupeesPayment.getBill()/80;
+    }
+}
+//Database Driver Adapter (JDBC)
 public class AdapterPatternDemo {
     public static void main(String[] args) {
 
@@ -36,8 +49,8 @@ public class AdapterPatternDemo {
         // i used to get bill in rs now i want it in dollar
 //        System.out.println(rupeesPayment.getBill()+ " Rs");
 
-        DollarPayment dollarPayment = new DollarPaymentAdapter(rupeesPayment);
-        System.out.println("$" + dollarPayment.getPayment() );
+        PaymentGateWay paymentGateWay = new DollarPaymentAdapter(rupeesPayment);
+        System.out.println("$" + paymentGateWay.getPayment() );
 
     }
 }

@@ -1,11 +1,12 @@
 package LLD.builderdesignpattern;
 
+// MAN OBJECT IS IMMUTABLE (THREAD SAFE)
 class Man{
 
-    String name;
-    String money ;
-    String romance ;
-    String respect ;
+    private final String name;
+    private final String money ;
+    private final String romance ;
+    private final String respect ;
 
     private Man(ManBuilder manBuilder){
         this.name=manBuilder.name;
@@ -26,10 +27,10 @@ class Man{
 
     public static class ManBuilder {
 
-        String name;
-        String money ;
-        String romance ;
-        String respect ;
+        private String name;
+        private String money ;
+        private String romance ;
+        private String respect ;
 
         public ManBuilder setName(String name){
             this.name = name ;

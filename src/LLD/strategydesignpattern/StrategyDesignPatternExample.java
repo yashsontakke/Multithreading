@@ -31,6 +31,8 @@ class  Calculator{
     }
 
 }
+
+//The Strategy Pattern is designed for situations where you have a family of interchangeable behaviors that can be chosen dynamically based on a particular context
 public class StrategyDesignPatternExample {
     public static void main(String[] args) {
         Calculator calculator = new Calculator();

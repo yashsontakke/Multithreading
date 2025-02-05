@@ -8,6 +8,7 @@ interface Observer{
 }
 
 // if there are multiple subject we should have subject interface also
+//The subject doesn’t need to know the specific classes of its observers, allowing for flexibility.
 class Subject{
     private int holder ;
     List<Observer> observers = new ArrayList<>();
@@ -31,6 +32,7 @@ class Subject{
 
 }
 
+//Observers can be easily added or removed without affecting the subject
 class NotificationObserver implements  Observer{
 
     @Override

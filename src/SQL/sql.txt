@@ -1,1 +1,4 @@
 LEAD AND LAG : https://www.youtube.com/watch?v=speKIs60TRs&t=19s
+#Two tables employee (contains name and Id) and employee details having work experience history (contains Id, fromYear, toYear)
+– find out all the employees who worked w/o career break.
+#Learn indexing in detail

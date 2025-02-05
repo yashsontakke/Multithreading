@@ -5,6 +5,7 @@ interface DeliveryPartner {
 }
 
 class FedExDelivery implements DeliveryPartner {
+
     @Override
     public void deliver(String address) {
         System.out.println("Delivering via FedEx to " + address);
@@ -20,25 +21,27 @@ class UPSDelivery implements DeliveryPartner {
 
 
 interface  PaymentMethod{
-    public void makePayment();
+    void makePayment(int amount);
 }
 
 class CreditCardPayment implements  PaymentMethod{
 
     @Override
-    public void makePayment() {
-        System.out.println("Made payment using credit card ");
+    public void makePayment(int amount) {
+        System.out.println("Made payment using credit card " + amount +"transferred");
     }
 }
 
 class UpiPayment implements  PaymentMethod{
 
     @Override
-    public void makePayment() {
-        System.out.println("Made payment using upi payment");
+    public void makePayment(int amount) {
+        System.out.println("Made payment using upi payment"+ amount +" transferred");
     }
 }
 
+
+//core of the bridge design pattern and defines the crux. Contains a reference to the implementer.
 abstract class Order{
     PaymentMethod paymentMethod;
     DeliveryPartner deliveryPartner;
@@ -48,8 +51,7 @@ abstract class Order{
         this.deliveryPartner = deliveryPartner;
     }
 
-    public void makeOrder(){}
-
+    public abstract void makeOrder(int amount, String address);
 }
 
 class OnlineOrder extends  Order{
@@ -58,10 +60,10 @@ class OnlineOrder extends  Order{
     }
 
     @Override
-    public void makeOrder() {
-        System.out.println("Online Order");
-        paymentMethod.makePayment();
-        deliveryPartner.deliver("hyderabad");
+    public void makeOrder(int amount , String address ) {
+
+        paymentMethod.makePayment(amount);
+        deliveryPartner.deliver(address);
     }
 }
 
@@ -70,21 +72,24 @@ class StoreOrder extends  Order{
         super(paymentMethod,deliveryPartner);
     }
     @Override
-    public void makeOrder() {
-        System.out.println("Store Order");
-        paymentMethod.makePayment();
+    public void makeOrder(int amount , String address) {
+
+        paymentMethod.makePayment(amount);
         deliveryPartner.deliver("mumbai");
     }
 }
 
-
+//The bridge pattern allows the Abstraction and the Implementation to be developed independently (i.e they are decoupled )and
+// the client code can access only the Abstraction part without being concerned about the Implementation part.
 public class BridgeDesignPatternExample {
     public static void main(String[] args) {
+
+        //run-time binding of the implementation.
         Order order1 = new OnlineOrder(new CreditCardPayment(), new FedExDelivery());
-        order1.makeOrder();
+        order1.makeOrder(1232,"hyderabad");
 
 
         Order order2 = new StoreOrder(new UpiPayment(), new UPSDelivery());
-        order2.makeOrder();
+        order2.makeOrder(2312,"banglore");
     }
 }

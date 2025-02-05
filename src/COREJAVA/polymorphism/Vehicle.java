@@ -1,4 +1,4 @@
-package polymorphism;
+package COREJAVA.polymorphism;
 
 public abstract class Vehicle{
 

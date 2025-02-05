@@ -68,7 +68,6 @@ class TrafficLight{
 
 }
 
-
 public class StateDesignPatternExample {
 
     public static void main(String[] args) {

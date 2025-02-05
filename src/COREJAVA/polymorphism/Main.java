@@ -1,4 +1,4 @@
-package polymorphism;
+package COREJAVA.polymorphism;
 
 class Parent {
     // Static method in Parent class

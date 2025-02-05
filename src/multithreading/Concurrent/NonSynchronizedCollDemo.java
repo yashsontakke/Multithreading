@@ -27,6 +27,10 @@ public class NonSynchronizedCollDemo {
         t2.join();
         System.out.println(list.size());  // 194 to
 
+        for(int i:list){
+            System.out.println(i);
+        }
+
     }
 
 }

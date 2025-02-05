@@ -1,7 +1,10 @@
 package LLD.decoratordesignpattern;
 
+import java.util.regex.Pattern;
+
 interface Beverage{
-    public int cost();
+    public int cost();   // interface methods are by default public because they are meant to be implemented by other classes
+    //All non-static and non-default methods in an interface are implicitly public.
 }
 // everyone is Beverage milk sugar Espresso
 class Espresso implements  Beverage{       // this does not take any beverage as reference
@@ -12,8 +15,9 @@ class Espresso implements  Beverage{       // this does not take any beverage as
     }
 }
 
+//the abstract keyword adds clarity to the design, making it clear that CoffeeDecorator should be extended, not instantiated directly.
 abstract class EspressoDecorator implements  Beverage{
-    Beverage beverage ;     // everyone has reference of its inner decorator to which call will be passed
+    Beverage beverage ;  // The decorator class holds an instance of the original object and delegates all calls to it, thereby preserving its behavior.
 
     EspressoDecorator(Beverage beverage){
         this.beverage = beverage;
@@ -35,6 +39,7 @@ class  Milk extends  EspressoDecorator{
     public int cost() {
         return super.cost()+5;    // calling inner reference
     }
+    // Additional functionality is implemented in the decorator class itself.
 }
 
 class  Sugar extends EspressoDecorator{
@@ -49,10 +54,9 @@ class  Sugar extends EspressoDecorator{
     }
 }
 
-
-
 public class DecoratorDesignPatternExample {
     public static void main(String[] args) {
+        //The Decorator Pattern is used to dynamically add behavior to an object at runtime, without modifying its structure
         Beverage beverage = new Milk(new Sugar(new Espresso()));
         System.out.println(beverage.cost());
     }

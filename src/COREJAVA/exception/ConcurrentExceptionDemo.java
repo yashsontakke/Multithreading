@@ -1,4 +1,4 @@
-package exception;
+package COREJAVA.exception;
 
 import java.util.*;
 
@@ -29,7 +29,7 @@ public class ConcurrentExceptionDemo {
             Integer val = iterator2.next();  // no need to casting
 
             if(val==23){
-                iterator2.remove();  // does not throw concurrent  exception
+                iterator2.remove();  // does not throw concurrent  COREJAVA.exception
             }
             System.out.println(val);
         }
