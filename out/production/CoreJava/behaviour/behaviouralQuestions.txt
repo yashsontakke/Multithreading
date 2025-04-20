@@ -1,0 +1,45 @@
+Behavioural Round
+
+Q) Tell me about a time when you had to work with a difficult team member. How did you handle the situation, and what was the outcome?
+
+Situation: In one of my previous projects, I worked with a team member who was not responsive and often   delayed their part of the work, which affected the entire team's progress.
+Task: Even though I was not the team lead, I still needed to collaborate effectively and ensure our work was completed on time.
+Action: Instead of escalating the issue immediately, I approached the team member in a friendly manner and asked if they were facing any challenges. I found out they were struggling with a technical issue but hesitated to ask for help. I shared some resources and even walked them through a similar problem I had faced before. Additionally, I suggested that we check in every couple of days to keep things on track.
+Result: They started making better progress, and our work got back on schedule. This experience taught me the importance of proactive communication and helping team members rather than waiting for issues to escalate.
+
+Q) Tell me about a time when you had to quickly learn something new to complete a task. How did you approach it, and what was the result?
+Situation: In my previous project, I was assigned a task that required working with Kafka, which I had never used before. The deadline was tight, and I had to implement a producer-consumer system efficiently.
+Task: My responsibility was to quickly learn Kafka and implement a message queue system for real-time processing without delaying the project timeline.
+Action: Instead of getting overwhelmed, I broke the problem down. I first went through Kafka’s documentation and watched a few tutorials to understand its core concepts. Then, I set up a small local Kafka environment to experiment hands-on. I also reached out to a colleague who had experience with Kafka for best practices. By working on small proof-of-concept examples, I was able to build confidence and implement the solution effectively.
+Result: I successfully integrated Kafka into the project within the deadline. The system worked efficiently, and my team appreciated my ability to adapt quickly. More importantly, this experience gave me confidence in learning new technologies under pressure.
+
+Q) Tell me about a time when you had a disagreement with a colleague. How did you handle it, and what was the outcome?
+Situation: In a team meeting, a colleague and I had a disagreement about how to prioritize tasks for an upcoming deadline. They believed we should focus on refining existing features, while I felt we needed to complete the core functionality first.
+Task: Despite our differing opinions, the goal was to make sure the project was delivered on time without compromising quality.
+Action: Instead of turning it into an argument, I took a step back and suggested we list out the pros and cons of both approaches. I also proposed that we get input from our manager and the rest of the team to ensure we made the best decision. This helped shift the discussion from personal opinions to a more objective evaluation.
+Result: After discussing it with the team, we decided on a balanced approach—completing the core functionality first while reserving time for refinement. This experience taught me the importance of active listening, open communication, and problem-solving in team dynamics.
+
+
+Q) Tell me about a time when you had to adapt to a major change. How did you handle it?
+Situation: Before joining college, I was quite introverted and found it difficult to start conversations or interact with new people. However, I realized that college was a completely different environment where teamwork, networking, and social interactions were important for both academic and personal growth.
+Task: I needed to step out of my comfort zone, build confidence, and improve my communication skills to make friends, participate in group projects, and take advantage of new opportunities.
+Action: Instead of forcing myself into uncomfortable situations all at once, I took small steps. I started by introducing myself to my classmates and actively participating in group discussions. I also joined a few clubs and attended events where I could interact with new people in a structured environment. Over time, I practiced speaking up in class and volunteering for team activities.
+Result: Gradually, I became more comfortable in social settings and built strong friendships. I also developed confidence in teamwork and public speaking, which helped me both academically and personally. This experience taught me that growth happens outside of our comfort zone, and small consistent efforts can lead to big changes.
+
+Q) Tell me about a time when you faced failure. How did you handle it, and what did you learn?
+Situation: In my second year of college, I applied for a leadership position in a student club that I was passionate about. I had put a lot of effort into my application and interview, but I wasn’t selected for the role. It was disappointing because I had really wanted the opportunity to contribute and grow as a leader.
+Task: My goal was to develop leadership skills and take on more responsibilities, but I had to deal with the setback of not being chosen.
+Action: Instead of feeling discouraged, I decided to analyze why I wasn’t selected. I reached out to the club seniors for feedback, and they told me that while I had strong technical skills, I needed to improve my communication and teamwork abilities. So, I actively started participating in group discussions, took on smaller responsibilities in the club, and even volunteered for event organizing to gain experience.
+Result: The next year, I reapplied with more confidence and experience—and this time, I got selected! More importantly, I learned that failure is just feedback in disguise. It helped me identify my weaknesses and work on them to become better.
+
+Q) Tell me about a time when you took the initiative to solve a problem without being asked. What did you do, and what was the result?
+Situation: During college, I was part of the cricket group, and we needed a website to display live scores for our matches. While everyone was discussing ideas, no one had taken the responsibility to build the actual application.
+Task: Even though I wasn’t specifically asked to do it, I realized that having a live score app would enhance the experience for our team and supporters. However, I had never worked on backend development before, so I knew this would be a challenge.
+Action: Instead of waiting for someone else to step up, I took the initiative to build the app myself. I started by learning backend development from online resources while simultaneously working on the frontend. I experimented with different technologies, faced several challenges, and debugged issues on my own. Along the way, I collaborated with my teammates to ensure the app met their requirements.
+Result: After a few weeks of effort, I successfully developed and deployed a functional live score app. It was well-received by the team, and everyone appreciated the effort. More importantly, I gained valuable experience in backend development, which later helped me in other projects. This experience reinforced my belief that stepping out of my comfort zone and taking initiative, even without prior knowledge, can lead to significant learning and impactful results.
+
+Q) Describe a time when you faced a setback on a project. How did you handle it, and what did you learn?
+Situation: In college, I was developing a live score app for our cricket team. During development, I was primarily testing alone, updating scores on one device and seeing the changes reflected instantly. Since I was always refreshing the page as part of my testing, I didn’t initially realize there was a problem.
+Task: However, when I conducted a full test with my teammates, I noticed that they weren't seeing the updated scores unless they manually refreshed the page. That’s when I realized that my frontend was only fetching data when the page loaded, not continuously.
+Action: I researched different ways to enable real-time updates and discovered WebSockets and long polling. Since I had never used these technologies before, I spent time understanding them. I implemented WebSockets so that every time a score was updated, a message was sent to all connected users, updating their screens instantly. After some debugging, I successfully made the app real-time.
+Result: The app worked seamlessly during our tournament, and everyone could track the live score without refreshing. This experience taught me that certain issues only become apparent during real-world testing, and sometimes, a feature that seems to work fine in development might behave differently in a real-use scenario.

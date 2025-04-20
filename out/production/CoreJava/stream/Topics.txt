@@ -1,0 +1,15 @@
+// parallel() and .parallelStream();
+// squential()
+// forEach() vs forEachOrdered()
+// cores
+// threads
+// parallelism vs concurrent
+// iterate()
+// senarios when there is thread safety issue
+// when to use parallel stream
+// collect make sure to handle thread safety
+// toList vs toCollection in parallel stream
+// take while vs filter
+// take while in parallel stream(why is it stateful)
+
+
