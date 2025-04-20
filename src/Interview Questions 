@@ -1,7 +1,7 @@
 Q.1 ) Write Priority Queue using Heap
 Q.2 ) Check if subtree :
 Q.3 ) https://www.geeksforgeeks.org/problems/connect-nodes-at-same-level/1  (Recursive way );
-Q.4 ) check it tree is complete binary tree
+Q.4 ) check if tree is complete binary tree
 Q.5 ) https://www.geeksforgeeks.org/problems/reorder-list/1
 https://www.geeksforgeeks.org/problems/minimum-cost-of-ropes-1587115620/1
 https://leetcode.com/problems/find-k-pairs-with-smallest-sums/description/
@@ -10,8 +10,6 @@ Implement thread safe KV store without using any inbuilt library
 merge sort iterative
 randomize a given array
 sorting in O(N)
-//Given a sorted array of size n, depict whether an element having a frequency greater than n/2.
-If it doesn't exist, give an indication. Expectation: O(log n) time
 // worst tc of merge and quick sort ;
 // hashmap internals , hash collision , equals and hashcode contract
 // string immutability

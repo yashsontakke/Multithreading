@@ -7,7 +7,6 @@ public class PriorityThreadExample {
 //        Thread.currentThread().setPriority(Thread.MAX_PRIORITY);     10
 //        System.out.println(Thread.currentThread().getPriority());  10
 
-
         System.out.println("main is running ");
         Thread t1 = new Thread(()->{
             System.out.println("t1 thread ");

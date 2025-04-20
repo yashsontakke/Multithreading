@@ -15,6 +15,8 @@ public class CacheThreadExecutorDemo {
     }
 }
 
+//Runnable itself does not create a thread. It is just a task. You need to pass it to a Thread object,
+// which actually starts the thread.
 class Test2  implements  Runnable{
     private int  index ;
 
