@@ -1,6 +1,5 @@
 package COREJAVA;
 
-
 final class Student{   // CLAS SHOULD BE FINAL AVOIDING SUBCLASSING
      private final int id ;   // name is final so it cannot be reassigned after the constructor is executed.
      private final String name ;  //  name is private so it is not accessible outside the class directly.

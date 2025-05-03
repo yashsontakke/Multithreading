@@ -62,6 +62,9 @@ public class Student implements Comparable<Student>{
         Collections.sort(list,Comparator.comparingInt(st->st.marks));
 
         Collections.sort(list,Student::compareTo);
+        // same
+        Collections.sort(list, (s11, s22) -> s11.compareTo(s22));
+
 
         System.out.println(list);
 

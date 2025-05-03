@@ -12,7 +12,7 @@ public class StringQuestions {
         String st = "iuwbefdiwbcsdnjcdsjncbdsjcdnjc";
 
         int arr [] = new int []{234,13423,4234,24234,23,123213,5235,5423,41,11,435,1};
-//        st.chars()
+//      st.chars()
 
         Stream<String> streamOfStrings =  Stream.generate(()->{
             String s = "helo ";
@@ -30,7 +30,7 @@ public class StringQuestions {
             // BUILD UP
             String str = "abc";
 
-            str.chars() // returns IntStream of character codes
+            st.chars() // returns IntStream of character codes
                     .forEach(ch -> {
                         System.out.println("Char: " + (char) ch + " | ASCII: " + ch);
                     });
@@ -56,10 +56,18 @@ public class StringQuestions {
 
         System.out.println(map);
 
+        System.out.println("here start ");
+        // entrySet() is a Map method
+        Set<Map.Entry<Character, Long>> set= st.chars().mapToObj(a->(char)a).collect(Collectors.groupingBy(Function.identity(),Collectors.counting())).entrySet();
+        System.out.println(set);
+        System.out.println("here end ");
+
+
 
 
         //***************** QUESTION :::find all  duplicate character in a string *************
-        st.chars().mapToObj(ch->(char) ch).collect(
+
+        st.chars().boxed().collect(
                 Collectors.groupingBy(
                         Function.identity(),
                         Collectors.counting()
@@ -67,6 +75,13 @@ public class StringQuestions {
         ).entrySet().stream().filter(key->key.getValue()>1).forEach(x->System.out.println(x));
 
         //***************** QUESTION ::find first not repeating character in a string *************
+
+//        collect(Collectors.groupingBy(
+//                (c) -> c,    // instead of Function.identity()
+//                () -> new LinkedHashMap<>(),   // instead of LinkedHashMap::new
+//                Collectors.counting()
+//        ));
+
       Character firstNotRepeatingCharacter= st.chars().mapToObj(ch->(char) ch).collect(
                 Collectors.groupingBy(
                         Function.identity(),
