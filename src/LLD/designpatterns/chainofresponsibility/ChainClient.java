@@ -1,4 +1,5 @@
 package LLD.designpatterns.chainofresponsibility;
+
 //Handler Interface
 //A Handler interface that declares a method to process requests and hold a reference to the next handler.
 abstract class Handler {

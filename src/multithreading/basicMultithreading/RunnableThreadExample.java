@@ -1,6 +1,7 @@
 package multithreading.basicMultithreading;
 
 public class RunnableThreadExample {
+
     public static void main(String[] args) {
         Thread t1 = new Thread(new Thread1());
         Thread t3 = new Thread(new Runnable() {

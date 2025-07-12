@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 interface ChatMediator {
-
     void sendMessage(String msg, User user);
     void addUser(User user);
 }
+
 class ChatMediatorImpl implements ChatMediator {
 
     private List<User> users;
@@ -41,7 +41,6 @@ abstract class User {
     }
 
     public abstract void send(String msg);
-
     public abstract void receive(String msg);
 }
 
@@ -63,6 +62,7 @@ class UserImpl extends User {
     }
 
 }
+
 public class MediatorDesignPatternExample {
     public static void main(String[] args) {
         ChatMediator mediator = new ChatMediatorImpl();

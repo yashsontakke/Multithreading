@@ -8,19 +8,21 @@ class Yash{
 
     } ;
 
-//    public static synchronized  Yash getInstance(){      // locking for each and every method call
-//        if(yashinstance==null){
-//            yashinstance = new Yash();
-//            return yashinstance;
+//    public static synchronized Yash getInstance1(){      // locking for each and every method call
+//        if(instance==null){
+//            // 3 threads are here
+//            instance = new Yash(); // one thread created instance
+//            return instance;
 //        }
-//        return yashinstance;
+//        return instance;
 //    }
+
     public static Yash getInstance() {
         if (instance == null) {   // 🚨 Thread 2 sees instance as non-null (but not fully initialized!)
             synchronized (Yash.class) {
                 if (instance == null) {
-                    instance = new Yash(); // 🚨 Steps might be reordered!
-                    //Object construction (new Yash()) isn't atomic. It's actually broken down into three steps:
+                     instance = new Yash(); // 🚨 Steps might be reordered!
+                     //Object construction (new Yash()) isn't atomic. It's actually broken down into three steps:
 //                    Allocate memory.
 //                    Assign reference to instance (i.e., instance != null now).
 //                    Call the constructor.

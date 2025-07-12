@@ -1,5 +1,4 @@
 package multithreading.Concurrent;
-
 import java.util.concurrent.CountDownLatch;
 
 public class CountDownLatchDemo {
@@ -13,8 +12,6 @@ public class CountDownLatchDemo {
 
         latch.await();   // will wait for all threads to finish
         System.out.println("Threads Finished ");
-
-
     }
 }
 
@@ -39,4 +36,5 @@ class Task implements  Runnable{
         System.out.println("Thread " + num + "completed ");
         latch.countDown();
     }
+
 }

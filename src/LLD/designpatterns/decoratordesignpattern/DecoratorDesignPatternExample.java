@@ -4,6 +4,7 @@ interface Beverage{
     public int cost();   // interface methods are by default public because they are meant to be implemented by other classes
     //All non-static and non-default methods in an interface are implicitly public.
 }
+
 // everyone is Beverage milk sugar Espresso
 class Espresso implements  Beverage{       // this does not take any beverage as reference
 
@@ -52,10 +53,19 @@ class  Sugar extends BeverageDecorator{
     }
 }
 
+
 public class DecoratorDesignPatternExample {
     public static void main(String[] args) {
+
+        Beverage espresso = new Espresso(); // base object is decided at compile-time
+
+        //You didn’t replace the original Espresso.
+        //You just wrapped it with extra behavior.
         //The Decorator Pattern is used to dynamically add behavior to an object at runtime, without modifying its structure
-        Beverage beverage = new Milk(new Sugar(new Espresso()));
-        System.out.println(beverage.cost());
+
+        //wrapping it with Milk or Sugar dynamically composes new behavior during execution
+        espresso = new Milk(new Sugar(new Espresso()));   // Milk IS-A Beverage
+        System.out.println(espresso.cost());
+        //recursive wrapping – each decorator can wrap another Beverage, including other decorators.
     }
 }

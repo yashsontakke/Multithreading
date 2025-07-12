@@ -27,6 +27,7 @@ class MyThreadd extends Thread {
 
 public class SharedObjectExample {
     public static void main(String[] args) {
+
         SharedResource resource = new SharedResource(); // Shared object
 
         MyThreadd t1 = new MyThreadd(resource); // Pass shared object

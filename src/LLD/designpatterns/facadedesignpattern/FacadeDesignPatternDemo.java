@@ -53,6 +53,7 @@ class HomeTheaterFacade {
 public class FacadeDesignPatternDemo {
     public static void main(String[] args) {
         // Creating subsystem components
+
         DVDPlayer dvd = new DVDPlayer();
         SoundSystem sound = new SoundSystem();
         Projector projector = new Projector();

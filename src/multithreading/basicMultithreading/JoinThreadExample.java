@@ -18,7 +18,7 @@ public class JoinThreadExample {
         t1.start();
         t2.start();
         t1.join();  // main thread will untill t1 thread finishes
-        System.out.println("i am main thread so i will have higher priority unless and untill i use join and wait fo" +
+        System.out.println("i am main thread so i will have higher priority unless and until i use join and wait fo" +
                 "r other thread to finish i will have to wait ");
 
     }

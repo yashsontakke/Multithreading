@@ -1,5 +1,7 @@
 package stream;
 
+
+
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
@@ -25,6 +27,17 @@ public class StringQuestions {
 
 
         //***************** QUESTION :::count the occurrence of each character in a string *************
+        //Use map() for int -> int
+        //Use mapToObj() for int -> Object (like Character)
+        //IntStream.of(65).map(i -> (char) i); // Compile error
+
+
+
+//String st1 = new String("shubya");
+//String st2 = st0;
+//
+//        System.out.println(st0.hashCode()+" "+stk.hashCode());
+//        System.out.println(st1.equals(st2)+"heheheh");
 
         {
             // BUILD UP

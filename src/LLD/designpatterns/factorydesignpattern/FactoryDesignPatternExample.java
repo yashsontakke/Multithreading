@@ -48,6 +48,7 @@ package LLD.designpatterns.factorydesignpattern;
 // Delegates object creation to subclasses or separate methods
 // Hides object instantiation details
 // create objects without exposing the creation logic to the client and still refer to newly created objects using a common interface
+
 public class FactoryDesignPatternExample {
     public static void main(String[] args) {
         Vehicle roadVehicle = VehicleFactory.createVehicle("car");
