@@ -1,4 +1,5 @@
-package LLD.designpatterns.x.strategydesignpattern;
+package LLD.designpatterns.behavioral.strategydesignpattern;
+
 import java.util.*;
 
 // ----------- Strategy Interface -----------

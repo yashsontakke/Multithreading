@@ -1,4 +1,4 @@
-package LLD.designpatterns.strategydesignpattern;
+package LLD.designpatterns.behavioral.strategydesignpattern;
 
 interface PaymentStrategy {
     boolean pay(double amount);

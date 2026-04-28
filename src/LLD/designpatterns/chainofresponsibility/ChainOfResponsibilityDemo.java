@@ -2,7 +2,6 @@ package LLD.designpatterns.chainofresponsibility;
 
 abstract class SupportHandler {
     protected SupportHandler nextHandler;
-
     // Constructor chaining
     public SupportHandler(SupportHandler nextHandler) {
         this.nextHandler = nextHandler;
@@ -10,6 +9,7 @@ abstract class SupportHandler {
 
     public abstract void handleRequest(String issue, int severity);
 }
+
 class L1Support extends SupportHandler {
     public L1Support(SupportHandler nextHandler) {
         super(nextHandler);  // Passing next handler to parent constructor

@@ -1,6 +1,7 @@
 package multithreading.basicMultithreading;
 
 public class SequentialExectionDemo {
+
     public static void main(String[] args) {
         demo1();
         demo2();

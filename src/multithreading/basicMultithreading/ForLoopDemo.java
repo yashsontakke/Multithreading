@@ -15,6 +15,7 @@ public class ForLoopDemo {
                 }
             }).start();
 
+            // main thread won’t stop for child threads.
             new ForLoopDemo().doWork("from loop");
         }
     }

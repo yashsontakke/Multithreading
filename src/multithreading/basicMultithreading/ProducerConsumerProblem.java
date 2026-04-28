@@ -48,7 +48,6 @@ class BlockingQueue{
     int counter =0;
     public void produce() throws InterruptedException {
             synchronized (list){
-
                 while(list.size()==5){
                 //A scenario where multiple producers are in WAITING state happens when:
                 //✅ The buffer is full.
@@ -70,6 +69,7 @@ class BlockingQueue{
             // here lock will be released and thread scheduler will give lock to one of the waiting thread (pro or consumer)
             Thread.sleep(500);
     }
+
     public void consume() throws InterruptedException{
         while (true){
             synchronized (list){

@@ -4,5 +4,8 @@
     <annotationProcessing>
       <profile default="true" name="Default" enabled="true" />
     </annotationProcessing>
+    <bytecodeTargetLevel target="21">
+      <module name="CoreJava" target="21" />
+    </bytecodeTargetLevel>
   </component>
 </project>

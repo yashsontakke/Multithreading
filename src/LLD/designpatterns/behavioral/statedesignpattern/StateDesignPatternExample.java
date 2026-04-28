@@ -1,4 +1,4 @@
-package LLD.designpatterns.statedesignpattern;
+package LLD.designpatterns.behavioral.statedesignpattern;
 
 interface TrafficLightState {
     void changeLight(TrafficLight trafficLight);

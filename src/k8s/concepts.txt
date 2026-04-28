@@ -1,0 +1,10 @@
+Each Kubernetes cluster is like its own private city with its own roads (Pod network).
+By default, there are no highways connecting two cities.
+You can build highways (VPC peering), airports (load balancers),
+or high-speed trains (service mesh) — but Kubernetes won’t do it for you automatically.
+
+The CNI plugin is not part of Linux —
+it’s a small program installed on each Kubernetes Node that uses Linux networking features to create virtual networks for Pods.
+
+Think of it as the “network architect” for your cluster —
+it draws virtual wires between Pods and Nodes using your OS’s networking toolkit.

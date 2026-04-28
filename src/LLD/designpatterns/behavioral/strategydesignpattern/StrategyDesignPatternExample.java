@@ -1,4 +1,4 @@
-package LLD.designpatterns.strategydesignpattern;
+package LLD.designpatterns.behavioral.strategydesignpattern;
 
 interface MathOperation {
     double execute(double a , double b );

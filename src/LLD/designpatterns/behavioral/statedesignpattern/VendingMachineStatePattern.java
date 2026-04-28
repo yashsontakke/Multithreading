@@ -1,4 +1,4 @@
-package LLD.designpatterns.statedesignpattern;
+package LLD.designpatterns.behavioral.statedesignpattern;
 
 // State Design Pattern Example: Vending Machine
 
