@@ -1,0 +1,7 @@
+If the “What to do” is same, but the “How to do” changes based on a condition → Strategy Pattern.
+(Instead of if/else or switch)
+
+Use strategy pattern if multiple algorithms are required and all these algorithms follow the same interface
+ie input and output of each algorithm is same.
+
+https://medium.com/@prashant558908/using-strategy-design-pattern-to-solve-questions-asked-in-low-level-design-interview-rounds-4f268b5facfa

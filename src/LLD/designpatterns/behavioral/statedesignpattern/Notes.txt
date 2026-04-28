@@ -1,0 +1,2 @@
+State	“What should I do in this state?”
+CoR	    “Who should handle this request?”

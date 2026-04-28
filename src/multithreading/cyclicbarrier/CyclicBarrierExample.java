@@ -1,6 +1,6 @@
 package multithreading.cyclicbarrier;
 
-public class MultiStageTour {
+public class CyclicBarrierExample {
 
 //    new Demo();
 //    static class Demo {

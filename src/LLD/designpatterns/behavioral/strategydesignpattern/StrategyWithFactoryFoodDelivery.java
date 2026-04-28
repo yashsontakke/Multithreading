@@ -1,4 +1,4 @@
-package LLD.designpatterns.strategydesignpattern;
+package LLD.designpatterns.x.strategydesignpattern;
 import java.util.*;
 
 // ----------- Strategy Interface -----------
@@ -100,6 +100,7 @@ public class StrategyWithFactoryFoodDelivery {
         // We now use the selected strategy to make the payment
         paymentService.payAmount(750.0);
     }
+
 }
 
 /*
